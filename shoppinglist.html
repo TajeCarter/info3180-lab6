@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="shoppinglist.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<head><title>Shopping list</title><head>
+	<body>
+		<script>
+			var app=angular.module("myShoppingList",[]);
+			app.controller("myCtrl",function($scope){
+				$scope.products=["Milk","Bread","Cheese"];
+				
+			});
+					
+		</script>	
+		<div ng-app="myShoppingList" ng-controller="myCtrl">
+			<ul>
+				<li ng-repeat="product in products">{{product}} 
+				
+			</ul>	
+		</div>
+	</body>
+</html>
