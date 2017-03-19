@@ -11,6 +11,9 @@
 				$scope.products=["Milk","Bread","Cheese"];
 				$scope.errortext="";
 					if(!$scope.addMe){return;}
+			}
+				$scope.removeItem=function (index){
+					$scope.errortext="";
 				
 			});
 					
@@ -18,6 +21,7 @@
 		<div ng-app="myShoppingList" ng-controller="myCtrl">
 			<ul>
 				<li ng-repeat="product in products">{{product}} 
+				<span ng-click="removeItem($index)">&times;</span>
 				
 			</ul>
 			<input ng-model="addMe">
