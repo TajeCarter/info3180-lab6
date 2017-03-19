@@ -1,0 +1,20 @@
+div{
+	background-color:darkorchid;
+	max-width:50%;
+	border: 2px solid #E9967A;
+	margin-top:10px;
+	margin-left:20px;
+	padding: 10px;
+
+}
+ul{
+	background:plum;
+	padding:10px;
+}
+li{
+	background:seashell;
+	margin:5px;
+}
+span{
+	float:right;
+}
